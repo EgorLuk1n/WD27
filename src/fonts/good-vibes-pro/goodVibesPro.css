@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Good Vibes Pro";
+    src: url("./good-vibes-pro.eot"); /* IE9 Compat Modes */
+    src: url("./good-vibes-pro.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./good-vibes-pro.otf") format("opentype"), /* Open Type Font */
+    url("./good-vibes-pro.svg") format("svg"), /* Legacy iOS */
+    url("./good-vibes-pro.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./good-vibes-pro.woff") format("woff"), /* Modern Browsers */
+    url("./good-vibes-pro.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}

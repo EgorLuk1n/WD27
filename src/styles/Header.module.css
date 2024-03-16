@@ -1,0 +1,188 @@
+.header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logotype {
+    width: 130px;
+    border-radius: 10%;
+}
+
+.title {
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 44px;
+    font-weight: 300;
+    min-width: 150px;
+    max-width: 450px;
+    line-height: 30px;
+
+}
+
+.title span {
+    font-family: "Good Vibes Pro", sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    position: relative;
+
+}
+
+.image {
+    width: 200px;
+    border-radius: 5%;
+    border: none;
+    z-index: 9;
+}
+
+.circleLeft {
+    position: absolute;
+    right: 325px;
+    top: 100px;
+    width: 15px;
+    height: 15px;
+    background: var(--dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.lineLeft {
+    border-top: 1px solid var(--dark);
+    position: absolute;
+    top: 7.5px;
+    left: 0;
+    width: 150px;
+    z-index: 1;
+}
+
+.lineLeft .textTop {
+    position: absolute;
+    bottom: 10px;
+}
+
+.lineLeft .textBottom {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+}
+
+
+.circleRight {
+    position: absolute;
+    left: 255px;
+    bottom: 100px;
+    width: 15px;
+    height: 15px;
+    background: var(--dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.lineRight {
+    border-top: 1px solid var(--dark);
+    position: absolute;
+    top: 7.5px;
+    right: 0;
+    width: 150px;
+    z-index: 1;
+}
+
+.lineRight .textTop {
+    position: absolute;
+    bottom: 10px;
+    left: 135px;
+    width: 100%;
+}
+
+.lineRight .textBottom {
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+
+@media screen and (max-width: 615px) {
+    .header {
+        overflow: hidden;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .image {
+        width: 140px;
+    }
+
+    .circleLeft {
+        right: 204px;
+        top: 62px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .lineLeft {
+        top: 4px;
+    }
+
+    .lineLeft .textTop {
+        left: -15px;
+        font-size: 14px;
+    }
+    .lineLeft .textBottom {
+        left: 5px;
+        font-size: 14px;
+    }
+
+    .circleRight {
+        left: 204px;
+        bottom: 34px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .lineRight {
+        top: 4px;
+    }
+
+    .lineRight .textTop {
+        left: 85px;
+        font-size: 14px;
+    }
+    .lineRight .textBottom {
+        left: 135px;
+        font-size: 14px;
+    }
+
+}
