@@ -10,6 +10,8 @@
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 25px auto;
 }
 
@@ -27,7 +29,6 @@
 }
 
 .title {
-
     text-align: center;
     text-decoration: none;
     font-size: 44px;
@@ -35,7 +36,6 @@
     min-width: 150px;
     max-width: 450px;
     line-height: 30px;
-
 }
 
 .title span {
@@ -131,6 +131,41 @@
     left: 100px;
 }
 
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.subject {
+    max-width: 600px;
+    font-size: 24px;
+    margin-bottom: 15px;
+
+}
+
+.subtitle {
+    max-width: 600px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+}
+
+.button {
+    width: 100%;
+    height: 60px;
+}
+
 
 @media screen and (max-width: 615px) {
     .header {
@@ -185,4 +220,15 @@
         font-size: 14px;
     }
 
+    .subject {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
 }

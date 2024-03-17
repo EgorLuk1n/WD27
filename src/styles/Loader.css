@@ -1,0 +1,21 @@
+
+.bouncing-dot-loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.a {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    z-index: 111;
+    transform: translate(-50%, -50%);
+}

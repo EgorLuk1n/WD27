@@ -39,8 +39,8 @@ button {
     border: none;
     background: none;
     outline: none;
-    color: #fff;
-    font-size: 16px;
+    color: var(--green);
+    font-size: 14px;
     font-family: Montserrat, Roboto, sans-serif;
 }
 
@@ -85,21 +85,25 @@ li {
 }
 
 section {
-    background: var(--dark);
-    border-radius: 6px;
+    background: var(--green-lite);
+    color: var(--white);
 }
 
 button {
-    background: var(--violet-dark);
+    background: transparent;
+    border: 1px solid var(--brown);
     border-radius: 6px;
     padding: 9px 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
     cursor: pointer;
 }
 
 button:hover {
-    background: var(--violet);
+    background: var(--green);
+    color: var(--white);
+    border: 1px solid var(--brown);
+
 }
 
 h2 {

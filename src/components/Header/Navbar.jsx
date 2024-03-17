@@ -5,8 +5,19 @@ import LOGO from '../../image/VK.png'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+
+    const overflow = () => {
+        if (!nav) {
+            setNav(!nav)
+            document.body.style.overflowY = "hidden";
+        } else {
+            setNav(!nav)
+            document.body.style.overflowY = "scroll";
+        }
+    }
     return (
-        <>
+
+        <div className={style.navbar}>
             <ul
                 className={
                     nav ? [style.menu, style.active].join(' ') : [style.menu]
@@ -34,10 +45,10 @@ const Navbar = () => {
                     <a href='##'>Контакты</a>
                 </li>
             </ul>
-            <div onClick={() => setNav(!nav)} className={style.mobile_btn}>
+            <div onClick={() => overflow()} className={style.mobile_btn}>
                 {nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25}/>}
             </div>
-        </>
+        </div>
     );
 };
 
